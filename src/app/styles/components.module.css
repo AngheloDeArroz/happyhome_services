@@ -1,0 +1,113 @@
+.jobRow {
+  transform: 
+    perspective(750px) 
+    translate3d(0px, 0px, -100px) 
+    scale(0.95, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease-in-out transform, 0.4s box-shadow ease-in-out;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 1.4rem; /* Increased padding for more space */
+  min-height: 140px; /* Increased minimum height for a larger box */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.jobRow:hover {
+  transform: 
+    translate3d(0px, 0px, 0px) 
+    scale(1, 1);
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+.jobRowHeader {
+  font-size: 1.75rem; /* Increased header font size */
+  font-weight: bold;
+  margin-bottom: 0.75rem; /* Increased margin for better spacing */
+}
+
+.jobRowContent {
+  display: flex;
+  gap: 1.5rem; /* Increased gap between content */
+}
+
+.jobRowDetails {
+  color: #6b7280;
+  font-size: 1rem; /* Larger font size for job details */
+  text-transform: capitalize;
+}
+
+.jobRowTime {
+  color: #6b7280;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1.4rem;
+  right: 1rem;
+}
+
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .jobRow {
+    margin-bottom: 0.15rem; /* Adjust for mobile */
+    font-size: 0.9rem; /* Maintain reduced font size */
+    transform: none; /* No perspective for mobile */
+    scale: 1;
+    min-height: 80px; /* Set a smaller minimum height */
+    padding: 0.5rem; /* Further reduce padding for a tighter fit */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow for mobile */
+  }
+
+  .orgName {
+    font-size: 0.6rem;
+  }
+
+  .jobRowHeader {
+    font-size: 0.9rem; /* Reduce font size for mobile */
+    margin-bottom: 0.25rem;
+  }
+
+  .jobRowContent {
+    display: flex;
+    flex-direction: row; /* Align details and time in the same row */
+    justify-content: space-between; /* Space between details and time */
+    align-items: center; /* Vertically align content to center */
+    gap: 0.25rem; /* Further reduce gap between items */
+    width: 100%; /* Ensure content takes the full width */
+  }
+
+  .jobRowDetails {
+    flex-grow: 1; /* Allow job details to take available space */
+    font-size: 0.5rem; /* Smaller text for mobile */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Prevent text overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center vertically */
+  }
+
+  .jobRowTime {
+    font-size: 0.5rem; /* Match the font size of details */
+    white-space: nowrap; /* Prevent wrapping */
+    margin-left: auto; /* Push the time element to the far right */
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center vertically */
+    top: 3.9rem;
+  }
+
+  .jobRowIcon {
+    width: 2.5rem; /* Reduce icon size */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    align-items: center; /* Center icon vertically */
+  }
+
+  .jobRowIcon img {
+    width: 100%;
+    height: auto; /* Ensure images don't stretch */
+    object-fit: contain; /* Contain image within the icon box */
+  }
+}
