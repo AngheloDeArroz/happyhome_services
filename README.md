@@ -1,62 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🏠 HappyHome_Services
+A comprehensive marketplace platform for home services, built with performance and scalability in mind using the Next.js App Router.
 
-## Getting Started
+🚀 Tech Stack
+Framework: Next.js 15 (App Router)
 
-First, run the development server:
+Styling: Tailwind CSS
 
-```bash
+Authentication: WorkOS (Enterprise-ready auth)
+
+Database (Text): MongoDB via Mongoose
+
+Storage (Images): AWS S3
+
+Deployment: Vercel
+
+📸 Interface Preview
+<table style="width: 100%; border-collapse: collapse;"> <tr> <td align="center" width="50%"> <b>Landing Page</b><br /> <img src="public/imgs/landing.png" width="100%" alt="Landing Page" /> </td> <td align="center" width="50%"> <b>Login (WorkOS)</b><br /> <img src="public/imgs/login.png" width="100%" alt="Login Page" /> </td> </tr> <tr> <td align="center" width="50%"> <b>Service Listings</b><br /> <img src="public/imgs/viewListing.png" width="100%" alt="View Listing" /> </td> <td align="center" width="50%"> <b>Create New Listing</b><br /> <img src="public/imgs/createListing.png" width="100%" alt="Create Listing" /> </td> </tr> <tr> <td align="center" width="50%"> <b>Edit Listing</b><br /> <img src="public/imgs/editListing.png" width="100%" alt="Edit Listing" /> </td> <td align="center" width="50%"> <b>Management Dashboard</b><br /> <img src="public/imgs/addListing.png" width="100%" alt="Add Listing" /> </td> </tr> </table>
+
+🛠️ Features & Integration
+Secure Auth: Managed identity via WorkOS for seamless login flows.
+
+Dynamic Storage: User-uploaded images are processed and stored in AWS S3 buckets for high availability.
+
+Flexible Data: MongoDB handles complex service listing schemas and user metadata.
+
+Responsive Design: Fully optimized for mobile and desktop using Tailwind CSS.
+
+⚙️ Getting Started
+1. Prerequisites
+Ensure you have your environment variables set up in a .env.local file:
+
+Code snippet
+
+WORKOS_API_KEY=
+WORKOS_CLIENT_ID=
+MONGODB_URI=
+AWS_S3_ACCESS_KEY=
+AWS_S3_SECRET_ACCESS_KEY=
+2. Installation & Development
+Bash
+
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📸 UI Screenshots
-
-Below are the main user interface screens of the application:
-
-### Landing Page
-![Landing Page](public/imgs/landing.png)
-
-### Login Page
-![Login Page](public/imgs/login.png)
-
-### View Listing
-![View Listing](public/imgs/viewListing.png)
-
-### Create Listing
-![Create Listing](public/imgs/createListing.png)
-
-### Edit Listing
-![Edit Listing](public/imgs/editListing.png)
-
-### Add Listing
-![Add Listing](public/imgs/addListing.png)
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# HappyHome_Services" 
-"# HappyHome_Services" 
-"# HappyHome_Services" 
-"# happyhome_services" 
+🚢 Deployment
+This app is optimized for Vercel. Simply connect your GitHub repository, add your Environment Variables, and deploy.
