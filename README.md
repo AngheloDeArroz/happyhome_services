@@ -16,6 +16,31 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## 📸 UI Screenshots
+
+Below are the main user interface screens of the application:
+
+### Landing Page
+![Landing Page](public/imgs/landing.jiff)
+
+### Login Page
+![Login Page](public/imgs/login.jiff)
+
+### Home Page
+![Home Page](public/imgs/homebg.png)
+
+### View Listing
+![View Listing](public/imgs/viewListing.jiff)
+
+### Create Listing
+![Create Listing](public/imgs/createListing.jiff)
+
+### Edit Listing
+![Edit Listing](public/imgs/editListing.jiff)
+
+### Add Listing
+![Add Listing](public/imgs/addListing.jiff)
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
