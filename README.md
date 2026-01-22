@@ -26,9 +26,6 @@ Below are the main user interface screens of the application:
 ### Login Page
 ![Login Page](public/imgs/login.jiff)
 
-### Home Page
-![Home Page](public/imgs/homebg.png)
-
 ### View Listing
 ![View Listing](public/imgs/viewListing.jiff)
 
