@@ -21,22 +21,22 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Below are the main user interface screens of the application:
 
 ### Landing Page
-![Landing Page](public/imgs/landing.jiff)
+![Landing Page](public/imgs/landing.png)
 
 ### Login Page
-![Login Page](public/imgs/login.jiff)
+![Login Page](public/imgs/login.png)
 
 ### View Listing
-![View Listing](public/imgs/viewListing.jiff)
+![View Listing](public/imgs/viewListing.png)
 
 ### Create Listing
-![Create Listing](public/imgs/createListing.jiff)
+![Create Listing](public/imgs/createListing.png)
 
 ### Edit Listing
-![Edit Listing](public/imgs/editListing.jiff)
+![Edit Listing](public/imgs/editListing.png)
 
 ### Add Listing
-![Add Listing](public/imgs/addListing.jiff)
+![Add Listing](public/imgs/addListing.png)
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
